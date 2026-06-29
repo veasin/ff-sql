@@ -1,8 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace nx\helpers\sql;
+namespace ff\helpers\sql;
 
-use nx\helpers\sql;
+use ff\helpers\sql;
 
 /**
  * @method sql select(array|string|expr|null $fields = [], array $options = [])

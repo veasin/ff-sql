@@ -2,9 +2,9 @@
 include_once '../vendor/autoload.php';
 error_reporting(E_ALL);
 
-use nx\helpers\sql;
+use ff\helpers\sql;
 
-use function nx\test;
+use function ff\test;
 
 // 测试 value 类型处理
 test('测试字符串值', (string)sql::value('hello'), '"hello"');

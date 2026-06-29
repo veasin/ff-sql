@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace nx\helpers\ddl;
+namespace ff\helpers\ddl;
+use function ff\db;
+
 class table{
 	private array $queue = [];
 	public function __construct(private readonly string $name){}
@@ -29,15 +31,15 @@ class table{
 		return $this;
 	}
 	public function execute(): array{
-		if(!function_exists('nx\db')) throw new \RuntimeException('The nx\db() function is required to execute DDL operations.');
+		if(!function_exists('ff\db')) throw new \RuntimeException('The ff\db() function is required to execute DDL operations.');
 		$SQLs = $this->buildAllSQL();
 		if(!$SQLs) return [];
 		try{
-			\nx\db('BEGIN');
-			foreach($SQLs as $sql) \nx\db($sql);
-			\nx\db('COMMIT');
+			db('BEGIN');
+			foreach($SQLs as $sql) db($sql);
+			db('COMMIT');
 		}catch(\Throwable $e){
-			\nx\db('ROLLBACK');
+			db('ROLLBACK');
 			throw $e;
 		}
 		return $SQLs;

@@ -1,10 +1,10 @@
 <?php
-use nx\helpers\sql;
+use ff\helpers\sql;
 
 include_once '../vendor/autoload.php';
 error_reporting(E_ALL);
 
-use function nx\test;
+use function ff\test;
 
 $table = sql::table('user');
 $info = sql::table('info i');

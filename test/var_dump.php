@@ -1,6 +1,6 @@
 <?php
 
-use nx\helpers\sql;
+use ff\helpers\sql;
 
 include_once '../vendor/autoload.php';
 error_reporting(E_ALL);

@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace nx\helpers\sql;
+namespace ff\helpers\sql;
 
 trait alias{
 	protected(set) ?string $alias = null;

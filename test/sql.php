@@ -1,7 +1,7 @@
 <?php
 
-use nx\helpers\sql;
-use function nx\test;
+use ff\helpers\sql;
+use function ff\test;
 
 include_once __DIR__ . '/../vendor/autoload.php';
 error_reporting(E_ALL);

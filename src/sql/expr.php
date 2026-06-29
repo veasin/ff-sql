@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-namespace nx\helpers\sql;
+namespace ff\helpers\sql;
 /**
  * @method operate add(mixed $any)              加法运算符
  * @method operate sub(mixed $any)              减法运算符

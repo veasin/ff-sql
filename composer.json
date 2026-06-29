@@ -1,7 +1,7 @@
 {
-  "name": "veasin/nx-sql",
-  "description": "sql builder for nx",
-  "homepage": "https://github.com/veasin/nx",
+  "name": "veasin/ff-sql",
+  "description": "sql builder for ff",
+  "homepage": "https://github.com/veasin/ff",
   "type": "framework",
   "authors": [
     {
@@ -16,12 +16,12 @@
   "minimum-stability": "stable",
   "autoload": {
     "psr-4": {
-      "nx\\helpers\\": [
+      "ff\\helpers\\": [
         "src/"
       ]
     }
   },
   "require-dev": {
-    "veasin/nx-tiny":">=0.0.1"
+    "veasin/ff":">=0.2.1"
   }
 }

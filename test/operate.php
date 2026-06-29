@@ -2,10 +2,10 @@
 include_once '../vendor/autoload.php';
 error_reporting(E_ALL);
 
-use nx\helpers\sql;
-use nx\helpers\sql\operate;
+use ff\helpers\sql;
+use ff\helpers\sql\operate;
 
-use function nx\test;
+use function ff\test;
 
 // 测试 operate 类的功能
 //test('operate 构造函数', new operate('eq', [1, 2]), new operate(...)); // 实际值与预期值比较可简化为断言逻辑，此处仅示例结构

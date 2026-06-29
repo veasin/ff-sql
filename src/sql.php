@@ -1,13 +1,8 @@
 <?php
 declare(strict_types=1);
-namespace nx\helpers;
+namespace ff\helpers;
 
-use nx\helpers\sql\alias;
-use nx\helpers\sql\builder;
-use nx\helpers\sql\expr;
-use nx\helpers\sql\operate;
-use nx\helpers\sql\table;
-use nx\helpers\sql\value;
+use ff\helpers\sql\{alias, builder, expr, operate, table, value};
 
 class sql implements \ArrayAccess{
 	use alias;
