@@ -1,27 +1,30 @@
 {
-  "name": "veasin/ff-sql",
-  "description": "sql builder for ff",
-  "homepage": "https://github.com/veasin/ff",
-  "type": "framework",
-  "authors": [
-    {
-      "name": "Vea",
-      "email": "vea@live.cn"
+    "name": "veasin/ff-sql",
+    "description": "SQL query builder, DDL generator, and migration tool for PHP 8.4+",
+    "homepage": "https://github.com/veasin/ff",
+    "type": "framework",
+    "authors": [
+        {
+            "name": "Vea",
+            "email": "vea@live.cn"
+        }
+    ],
+    "require": {
+        "php": ">=8.4",
+        "ext-pdo": "*"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "ff\\helpers\\": [
+                "src/"
+            ]
+        }
+    },
+    "bin": [
+        "tools/migrate.php"
+    ],
+    "require-dev": {
+        "veasin/ff": ">=0.2.10"
     }
-  ],
-  "require": {
-    "php": ">=8.4",
-    "ext-pdo": "*"
-  },
-  "minimum-stability": "stable",
-  "autoload": {
-    "psr-4": {
-      "ff\\helpers\\": [
-        "src/"
-      ]
-    }
-  },
-  "require-dev": {
-    "veasin/ff":">=0.2.1"
-  }
 }
